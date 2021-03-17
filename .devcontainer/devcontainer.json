@@ -1,0 +1,17 @@
+{
+	"name": "Breve Tips",
+	"build": {
+		"dockerfile": "Dockerfile",
+	},
+
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+
+	"extensions": [
+	],
+
+	"mounts": ["source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=delegated"],
+
+	"forwardPorts": [4000]
+}
